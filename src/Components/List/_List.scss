@@ -1,0 +1,42 @@
+.list {
+	li {
+		display: flex;
+		align-items: center;
+
+		padding: 10px 12px;
+		cursor: pointer;
+
+		&:first-child {
+			margin-bottom: 40px;
+		}
+
+		&.active {
+			background: #ffffff;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+			border-radius: 4px;
+		}
+
+		.badge {
+			position: relative;
+			left: -3px;
+			width: 10px;
+			height: 10px;
+			border-radius: 30px;
+			&--green {
+				background-color: #42b883;
+			}
+			&--blue {
+				background-color: #64c4ed;
+			}
+			&--pink {
+				background-color: #ffbbcc;
+			}
+			&--cyan {
+				background-color: #b6e6bd;
+			}
+			&--grey {
+				background-color: #c9d1d3;
+			}
+		}
+	}
+}
